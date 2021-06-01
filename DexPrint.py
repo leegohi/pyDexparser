@@ -1,6 +1,6 @@
 import Dex
 
-dex = Dex.Dex('classes2.dex')
+dex = Dex.Dex('Hello.dex')
 
 dex.print_dex_header()
 dex.getStrings().printAllEls()
@@ -13,5 +13,5 @@ dex.getClassDefs().printAllEls()
 classes = dex.getClasses()
 for i in range(len(classes)):
     item = classes[i]
-    print "[#%d] Class" % i
+    print("[#%d] Class" % i)
     item.printAllEl()

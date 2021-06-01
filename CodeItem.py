@@ -107,11 +107,11 @@ class CodeItem:
 
 
     def printAllEl(self):
-        print self.codeItem
+        print(self.codeItem)
         for i in range(len(self.tryItems)):
             item = self.tryItems[i]
-            print "[%02d] : %04x - %04x  %04x" % (i, item.startAddr, item.startAddr + item.insnCount, item.handlerOff)
+            print("[%02d] : %04x - %04x  %04x" % (i, item.startAddr, item.startAddr + item.insnCount, item.handlerOff))
 
         for i in range(len(self.handlers)):
             item = self.handlers[i]
-            print "[%02d] : %d  %04x  %04x" % (i, item.size, item.typeIdx, item.address)
+            print("[%02d] : %d  %04x  %04x" % (i, item.size, item.typeIdx, item.address))

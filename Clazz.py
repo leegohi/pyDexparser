@@ -93,7 +93,7 @@ class Clazz:
                 self.codeItems.append(aCodeItem)
 
     def printAllEl(self):
-        print self.dexClassData
+        print(self.dexClassData)
         for i in range(len(self.codeItems)):
             self.codeItems[i].printAllEl()
-        print
+        print()
